@@ -1,3 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
 
+body {
+  background-color: hsl(0deg, 0%, 95%);
+  font-size: 15px;
+  font-family: "Lexend Deca", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+body .cards-container {
+  display: flex;
+  flex-direction: column;
+  margin: 5.5rem 0;
+  width: 325px;
+  border-radius: 0.5rem;
+  -webkit-border-radius: 0.5rem;
+  -moz-border-radius: 0.5rem;
+  -ms-border-radius: 0.5rem;
+  -o-border-radius: 0.5rem;
+  overflow: hidden;
+}
+body .cards-container .card {
+  padding: 3rem;
+  width: 100%;
+  height: 440px;
+  color: hsla(0deg, 0%, 100%, 0.75);
+}
+body .cards-container .card picture img {
+  margin-bottom: 2rem;
+}
+body .cards-container .card .title-card {
+  font-family: "Big Shoulders Display", cursive;
+  font-size: 2.5rem;
+  color: hsl(0deg, 0%, 95%);
+  margin-bottom: 1.5rem;
+}
+body .cards-container .card .details {
+  line-height: 1.5rem;
+  margin-bottom: 2.5rem;
+}
+body .cards-container .card .link {
+  background-color: hsl(0deg, 0%, 95%);
+  border-radius: 2rem;
+  -webkit-border-radius: 2rem;
+  -moz-border-radius: 2rem;
+  -ms-border-radius: 2rem;
+  -o-border-radius: 2rem;
+  padding: 0.7rem 1.8rem;
+  text-decoration: none;
+  border: 2px solid hsl(0deg, 0%, 95%);
+}
+body .cards-container .card:first-of-type {
+  background-color: hsl(31deg, 77%, 52%);
+}
+body .cards-container .card:first-of-type .link {
+  color: hsl(31deg, 77%, 52%);
+}
+body .cards-container .card:first-of-type .link:hover {
+  background-color: transparent;
+  color: hsl(0deg, 0%, 95%);
+}
+body .cards-container .card:nth-of-type(2) {
+  background-color: hsl(184deg, 100%, 22%);
+}
+body .cards-container .card:nth-of-type(2) .link {
+  color: hsl(184deg, 100%, 22%);
+}
+body .cards-container .card:nth-of-type(2) .link:hover {
+  background-color: transparent;
+  color: hsl(0deg, 0%, 95%);
+}
+body .cards-container .card:last-of-type {
+  background-color: hsl(179deg, 100%, 13%);
+}
+body .cards-container .card:last-of-type .link {
+  color: hsl(179deg, 100%, 13%);
+}
+body .cards-container .card:last-of-type .link:hover {
+  background-color: transparent;
+  color: hsl(0deg, 0%, 95%);
+}
+
+@media screen and (min-width: 930px) {
+  body {
+    width: 100vw;
+    height: 100vh;
+  }
+  body .cards-container {
+    width: 924px;
+    height: 503px;
+    display: flex;
+    flex-direction: row;
+  }
+  body .cards-container .card {
+    height: 100%;
+  }
+  body .cards-container .card .details {
+    margin-bottom: 6rem;
+  }
+}
 
 /*# sourceMappingURL=styles.css.map */
